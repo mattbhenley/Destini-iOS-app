@@ -31,6 +31,7 @@ class ViewController: UIViewController {
     
     // UI Elements linked to the storyboard
     @IBOutlet weak var topButton: UIButton!         // Has TAG = 1
+    
     @IBOutlet weak var bottomButton: UIButton!      // Has TAG = 2
     @IBOutlet weak var storyTextView: UILabel!
     
@@ -45,11 +46,24 @@ class ViewController: UIViewController {
         
         // TODO Step 3: Set the text for the storyTextView, topButton, bottomButton, and to T1_Story, T1_Ans1, and T1_Ans2
         
+        storyTextView.text = story1
+        
+        // updating text on buttons
+        topButton.setTitle(answer1a, for: .normal)
+        
     }
 
     
     // User presses one of the buttons
     @IBAction func buttonPressed(_ sender: UIButton) {
+        
+        if sender.tag == 1 {
+            
+        }
+        
+        if sender.tag == 2 {
+            
+        }
     
         // TODO Step 4: Write an IF-Statement to update the views
                 
