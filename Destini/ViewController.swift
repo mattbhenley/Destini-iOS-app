@@ -52,13 +52,7 @@ class ViewController: UIViewController {
         
         // TODO Step 3: Set the text for the storyTextView, topButton, bottomButton, and to T1_Story, T1_Ans1, and T1_Ans2
         
-        storyTextView.text = story1
-        
-        topButton.setTitle(answer1a, for: .normal)
-        
-        bottomButton.setTitle(answer1b, for: .normal)
-        
-        restartButton.isHidden = true
+        restart()
         
     }
 
@@ -108,12 +102,16 @@ class ViewController: UIViewController {
         // TODO Step 6: Modify the IF-Statement to complete the story
                 // && storyIndex
         @IBAction func restartPressed(_ sender: UIButton) {
-            storyIndex = 1
-            storyTextView.text = story1
-            topButton.setTitle(answer1a, for: .normal)
-            bottomButton.setTitle(answer1b, for: .normal)
+            restart()
             
         }
+    
+    func restart() {
+        storyIndex = 1
+        storyTextView.text = story1
+        topButton.setTitle(answer1a, for: .normal)
+        bottomButton.setTitle(answer1b, for: .normal)
+    }
     
 }
     
