@@ -58,6 +58,8 @@ class ViewController: UIViewController {
         
         bottomButton.setTitle(answer1b, for: .normal)
         
+        restartButton.isHidden = true
+        
     }
 
     
@@ -98,7 +100,7 @@ class ViewController: UIViewController {
                     storyIndex = 4
             }
         if storyIndex == 4 || storyIndex == 5 || storyIndex == 6 {
-            
+            restartButton.isHidden = false
         }
     }
     
@@ -106,6 +108,11 @@ class ViewController: UIViewController {
         // TODO Step 6: Modify the IF-Statement to complete the story
                 // && storyIndex
         @IBAction func restartPressed(_ sender: UIButton) {
+            storyIndex = 1
+            storyTextView.text = story1
+            topButton.setTitle(answer1a, for: .normal)
+            bottomButton.setTitle(answer1b, for: .normal)
+            
         }
     
 }
