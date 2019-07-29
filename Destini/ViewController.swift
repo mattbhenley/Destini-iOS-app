@@ -37,7 +37,10 @@ class ViewController: UIViewController {
     // Has TAG = 2
     @IBOutlet weak var storyTextView: UILabel!
     
+    @IBOutlet weak var restartButton: UIButton!
+    
     // TODO Step 5: Initialise instance variables here
+
     
     var storyIndex = 1
 
@@ -77,10 +80,12 @@ class ViewController: UIViewController {
                     storyTextView.text = story6
                     topButton.isHidden = true
                     bottomButton.isHidden = true
+                    storyIndex = 6
                 } else if sender.tag == 2 && storyIndex == 3 {
                     storyTextView.text = story5
                     topButton.isHidden = true
                     bottomButton.isHidden = true
+                    storyIndex = 5
                 } else if sender.tag == 1 && storyIndex == 2 {
                     storyTextView.text = story3
                     topButton.setTitle(answer3a, for: .normal)
@@ -90,14 +95,20 @@ class ViewController: UIViewController {
                     storyTextView.text = story4
                     topButton.isHidden = true
                     bottomButton.isHidden = true
+                    storyIndex = 4
             }
+        if storyIndex == 4 || storyIndex == 5 || storyIndex == 6 {
+            
         }
+    }
     
                 
         // TODO Step 6: Modify the IF-Statement to complete the story
                 // && storyIndex
+        @IBAction func restartPressed(_ sender: UIButton) {
+        }
     
-    }
+}
     
 
 
