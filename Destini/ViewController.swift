@@ -51,6 +51,8 @@ class ViewController: UIViewController {
         // updating text on buttons
         topButton.setTitle(answer1a, for: .normal)
         
+        bottomButton.setTitle(answer1b, for: .normal)
+        
     }
 
     
