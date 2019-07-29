@@ -83,11 +83,10 @@ class ViewController: UIViewController {
     
                 
         // TODO Step 6: Modify the IF-Statement to complete the story
+                // && storyIndex
     
     }
     
 
 
-
-}
 
